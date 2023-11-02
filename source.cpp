@@ -46,11 +46,13 @@ void source(void) {
 		<< "\t" << "2.2 : Absolute Value " << endl
 		<< "\t" << "2.3 : Exponetial " << endl
 		<< "\t" << "2.4 : Log10" << endl
+#ifdef TRIGONOMETRIC_H_
 		<< "3 : Trigonometric Operations : " << endl  // 3
 		<< "\t" << "3.1 : sin " << endl
 		<< "\t" << "3.2 : cos " << endl
 		<< "\t" << "3.3 : tan " << endl
 		<< "4 : Exit " << endl
+#endif
 		<< endl;
 
 	int operation_type = 0, operation = 0;
@@ -150,6 +152,7 @@ void source(void) {
 		// -------------------------------------------------------------------------------
 
 		// -------------------------------------------------------------------------------
+#ifdef TRIGONOMETRIC_H_
 	case 3:
 		cout << "Choose Operation : " << endl
 			<< "3 : Trigonometric Operations : " << endl  // 3
@@ -182,6 +185,7 @@ void source(void) {
 		}
 		cout << "Result : " << result << endl << endl;
 		break;
+#endif
 		// ------------------------------------------------------------------------------
 
 		// ------------------------------------------------------------------------------
