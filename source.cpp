@@ -1,4 +1,4 @@
-#include <iostream>
+#include "calculator.h"
 
 #include "arithmetic.h"
 #include "linear.h"

@@ -1,6 +1,5 @@
-#include <iostream>
+#include "calculator.h"
 #include "linear.h"
-#include <cmath>
 
 using namespace std;
 

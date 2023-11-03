@@ -1,6 +1,5 @@
-#include <iostream>
+#include "calculator.h"
 #include "trigonometric.h"
-#include <cmath>
 
 using namespace std;
 const double PI = 3.14;
