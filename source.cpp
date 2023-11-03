@@ -1,11 +1,14 @@
 #include <iostream>
-#include <cmath>
-#include "linear.h"
-#include "arithmetic.h"
-#include "trigonometic.h"
-void source(void);
 
-const double PI = 3.14;
+#include "arithmetic.h"
+#include "linear.h"
+#include "trigonometric.h"
+
+#define ARITHMATIC
+#define LINEAR
+#define TRIGONOMETRIC
+
+void source(void);
 
 using namespace std;
 
@@ -34,35 +37,39 @@ int main(int argc, char *argv[]) {
 void source(void) {
 	cout << "Welcome to Math's World : " << endl
 		<< "Choose Operation Type : " << endl
-		<< "1 : Arithmatic Operations : " << endl     // 1
+#ifdef ARITHMATIC
+		<< "1 : Arithmatic Operations : " << endl         // 1
 		<< "\t" << "1.1 : Addition (+) " << endl
 		<< "\t" << "1.2 : Substract (-) " << endl
 		<< "\t" << "1.3 : Multiply (*) " << endl
 		<< "\t" << "1.4 : Division (/) " << endl
 		<< "\t" << "1.5 : Remainder (%) " << endl
 		<< "\t" << "1.6 : Power (**) " << endl
-		<< "2 : Linear Operations : " << endl         //  2
+#endif
+#ifdef LINEAR
+		<< "2 : Linear Operations : " << endl             //  2
 		<< "\t" << "2.1 : Squire Root " << endl
 		<< "\t" << "2.2 : Absolute Value " << endl
 		<< "\t" << "2.3 : Exponetial " << endl
 		<< "\t" << "2.4 : Log10" << endl
-#ifdef TRIGONOMETRIC_H_
-		<< "3 : Trigonometric Operations : " << endl  // 3
+#endif
+#ifdef TRIGONOMETRIC
+		<< "3 : Trigonometric Operations : " << endl      // 3
 		<< "\t" << "3.1 : sin " << endl
 		<< "\t" << "3.2 : cos " << endl
 		<< "\t" << "3.3 : tan " << endl
 		<< "4 : Exit " << endl
-#endif
 		<< endl;
-
+#endif
 	int operation_type = 0, operation = 0;
-	double num1, num2, num, result;
+	double result;
 
 	cout << "Enter Operation Type : "; cin >> operation_type;
 
 
 	switch (operation_type) {
 		// -------------------------------------------------------------------------------
+#ifdef ARITHMATIC
 	case 1:
 		cout << "Choose Operation : " << endl
 			<< "1 : Arithmatic Operations : " << endl     // 1
@@ -73,48 +80,16 @@ void source(void) {
 			<< "\t" << "1.5 : Remainder (%) " << endl
 			<< "\t" << "1.6 : Power (**) " << endl
 			<< endl;
+
 		cout << "Enter Operation : 1."; cin >> operation;
-
-		switch (operation) {
-		case 1:
-			cout << "Enter number 1 : "; cin >> num1;
-			cout << "Enter number 2 : "; cin >> num2;
-			result = arith::add<double>(num1, num2);
-			break;
-		case 2:
-			cout << "Enter number 1 : "; cin >> num1;
-			cout << "Enter number 2 : "; cin >> num2;
-			result = arith::sub<double>(num1, num2);
-			break;
-		case 3:
-			cout << "Enter number 1 : "; cin >> num1;
-			cout << "Enter number 2 : "; cin >> num2;
-			result = arith::mul<double>(num1, num2);
-			break;
-		case 4:
-			cout << "Enter number 1 : "; cin >> num1;
-			cout << "Enter number 2 : "; cin >> num2;
-			result = arith::div<double>(num1, num2);
-			break;
-		case 5:
-			cout << "Enter number 1 : "; cin >> num1;
-			cout << "Enter number 2 : "; cin >> num2;
-			result = (double)arith::mod<int>(num1, num2);
-			break;
-		case 6:
-			cout << "Enter number 1 : "; cin >> num1;
-			cout << "Enter number 2 : "; cin >> num2;
-			result = arith::pow_<double>(num1, num2);
-			break;
-		default:
-			cout << "Invalid Operation." << endl
-				<< "Try again..!" << endl;
-		}
-		cout << "Result : " << result << endl << endl;
+		result = arithmetic_scope::arithmetic(operation);
+		cout << "Result = " << result << endl;
 		break;
+#endif
 		// -------------------------------------------------------------------------------
 
 		// -------------------------------------------------------------------------------
+#ifdef LINEAR
 	case 2:
 		cout << "Choose Operation : " << endl
 			<< "2 : Linear Operations : " << endl         //  2
@@ -125,34 +100,14 @@ void source(void) {
 			<< endl;
 
 		cout << "Enter Operation : 2."; cin >> operation;
-
-		switch (operation) {
-		case 1:
-			cout << "Enter a number : "; cin >> num;
-			result = (double)line::sqrt_<double>(num);
-			break;
-		case 2:
-			cout << "Enter a number : "; cin >> num;
-			result = line::abs_<double>(num);
-			break;
-		case 3:
-			cout << "Enter a number : "; cin >> num;
-			result = line::exp_<double>(num);
-			break;
-		case 4:
-			cout << "Enter a number : "; cin >> num;
-			result = line::log_<double>(num);
-			break;
-		default:
-			cout << "Invalid Operation." << endl
-				<< "Try again..!" << endl;
-		}
-		cout << "Result : " << result << endl << endl;
+		result = linear_scope::linear(operation);
+		cout << "Result = " << result << endl;
 		break;
+#endif
 		// -------------------------------------------------------------------------------
 
 		// -------------------------------------------------------------------------------
-#ifdef TRIGONOMETRIC_H_
+#ifdef TRIGONOMETRIC
 	case 3:
 		cout << "Choose Operation : " << endl
 			<< "3 : Trigonometric Operations : " << endl  // 3
@@ -162,28 +117,8 @@ void source(void) {
 			<< endl;
 
 		cout << "Enter Operation : 3."; cin >> operation;
-
-		switch (operation) {
-		case 1:
-			cout << "Degree in radian (num * PI). Enter num : "; cin >> num;
-			num *= PI;
-			result = trig::sin_<double>(num);
-			break;
-		case 2:
-			cout << "Degree in radian (num * PI). Enter num : "; cin >> num;
-			num *= PI;
-			result = trig::cos_<double>(num);
-			break;
-		case 3:
-			cout << "Degree in radian (num * PI). Enter num : "; cin >> num;
-			num *= PI;
-			result = trig::tan_<double>(num);
-			break;
-		default:
-			cout << "Invalid Operation." << endl
-				<< "Try again..!" << endl;
-		}
-		cout << "Result : " << result << endl << endl;
+		result = trigonometric_scope::trigonometric(operation);
+		cout << "Result = " << result << endl;
 		break;
 #endif
 		// ------------------------------------------------------------------------------
