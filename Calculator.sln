@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Calculator", "Calculator\Calculator.vcxproj", "{317AA762-F143-4DD4-8E87-110986D61ACB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arithmetic", "Arithmetic\Arithmetic.vcxproj", "{876659D4-D24E-47C8-90DE-184FB629F4F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Linear", "Linear\Linear.vcxproj", "{CE3D7D14-92AC-418F-B475-503A63337102}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trigonometric", "Trigonometric\Trigonometric.vcxproj", "{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{317AA762-F143-4DD4-8E87-110986D61ACB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{317AA762-F143-4DD4-8E87-110986D61ACB}.Debug|Win32.Build.0 = Debug|Win32
+		{317AA762-F143-4DD4-8E87-110986D61ACB}.Release|Win32.ActiveCfg = Release|Win32
+		{317AA762-F143-4DD4-8E87-110986D61ACB}.Release|Win32.Build.0 = Release|Win32
+		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Debug|Win32.Build.0 = Debug|Win32
+		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Release|Win32.ActiveCfg = Release|Win32
+		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Release|Win32.Build.0 = Release|Win32
+		{CE3D7D14-92AC-418F-B475-503A63337102}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE3D7D14-92AC-418F-B475-503A63337102}.Debug|Win32.Build.0 = Debug|Win32
+		{CE3D7D14-92AC-418F-B475-503A63337102}.Release|Win32.ActiveCfg = Release|Win32
+		{CE3D7D14-92AC-418F-B475-503A63337102}.Release|Win32.Build.0 = Release|Win32
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Debug|Win32.Build.0 = Debug|Win32
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Release|Win32.ActiveCfg = Release|Win32
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
