@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include "calculator.h"
 namespace arithmetic_scope {
 	double arithmetic(int operation);
 	template <typename R, typename T1, typename T2> R add(T1 a, T2 b);

@@ -1,4 +1,7 @@
-#include "source.h"
+#include "calculator.h"
+#include "arithmetic.h"
+#include "linear.h"
+#include "trigonometric.h"
 
 #define ARITHMATIC
 #define LINEAR

@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include "calculator.h"
 namespace linear_scope {
 	double linear(int operation);
 	template<typename R, typename T> R sqrt_(T n);

@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include "calculator.h"
 namespace trigonometric_scope {
 	double trigonometric(int operation);
 	template<typename R, typename T> R sin_(T n);
