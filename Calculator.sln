@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Calculator", "Calculator\Calculator.vcxproj", "{317AA762-F143-4DD4-8E87-110986D61ACB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A} = {9FC5B50F-81A0-4C12-B28C-FA648F7D042A}
+		{CE3D7D14-92AC-418F-B475-503A63337102} = {CE3D7D14-92AC-418F-B475-503A63337102}
+		{876659D4-D24E-47C8-90DE-184FB629F4F9} = {876659D4-D24E-47C8-90DE-184FB629F4F9}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arithmetic", "Arithmetic\Arithmetic.vcxproj", "{876659D4-D24E-47C8-90DE-184FB629F4F9}"
 EndProject
@@ -13,26 +18,46 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trigonometric", "Trigonomet
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
 		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|ARM = Release|ARM
 		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{317AA762-F143-4DD4-8E87-110986D61ACB}.Debug|ARM.ActiveCfg = Debug|Win32
 		{317AA762-F143-4DD4-8E87-110986D61ACB}.Debug|Win32.ActiveCfg = Debug|Win32
 		{317AA762-F143-4DD4-8E87-110986D61ACB}.Debug|Win32.Build.0 = Debug|Win32
+		{317AA762-F143-4DD4-8E87-110986D61ACB}.Debug|x64.ActiveCfg = Debug|Win32
+		{317AA762-F143-4DD4-8E87-110986D61ACB}.Release|ARM.ActiveCfg = Release|Win32
 		{317AA762-F143-4DD4-8E87-110986D61ACB}.Release|Win32.ActiveCfg = Release|Win32
 		{317AA762-F143-4DD4-8E87-110986D61ACB}.Release|Win32.Build.0 = Release|Win32
+		{317AA762-F143-4DD4-8E87-110986D61ACB}.Release|x64.ActiveCfg = Release|Win32
+		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Debug|ARM.ActiveCfg = Debug|Win32
 		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Debug|Win32.ActiveCfg = Debug|Win32
 		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Debug|Win32.Build.0 = Debug|Win32
+		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Debug|x64.ActiveCfg = Debug|Win32
+		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Release|ARM.ActiveCfg = Release|Win32
 		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Release|Win32.ActiveCfg = Release|Win32
 		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Release|Win32.Build.0 = Release|Win32
+		{876659D4-D24E-47C8-90DE-184FB629F4F9}.Release|x64.ActiveCfg = Release|Win32
+		{CE3D7D14-92AC-418F-B475-503A63337102}.Debug|ARM.ActiveCfg = Debug|Win32
 		{CE3D7D14-92AC-418F-B475-503A63337102}.Debug|Win32.ActiveCfg = Debug|Win32
 		{CE3D7D14-92AC-418F-B475-503A63337102}.Debug|Win32.Build.0 = Debug|Win32
+		{CE3D7D14-92AC-418F-B475-503A63337102}.Debug|x64.ActiveCfg = Debug|Win32
+		{CE3D7D14-92AC-418F-B475-503A63337102}.Release|ARM.ActiveCfg = Release|Win32
 		{CE3D7D14-92AC-418F-B475-503A63337102}.Release|Win32.ActiveCfg = Release|Win32
 		{CE3D7D14-92AC-418F-B475-503A63337102}.Release|Win32.Build.0 = Release|Win32
+		{CE3D7D14-92AC-418F-B475-503A63337102}.Release|x64.ActiveCfg = Release|Win32
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Debug|ARM.ActiveCfg = Debug|Win32
 		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Debug|Win32.ActiveCfg = Debug|Win32
 		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Debug|Win32.Build.0 = Debug|Win32
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Debug|x64.ActiveCfg = Debug|Win32
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Release|ARM.ActiveCfg = Release|Win32
 		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Release|Win32.ActiveCfg = Release|Win32
 		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Release|Win32.Build.0 = Release|Win32
+		{9FC5B50F-81A0-4C12-B28C-FA648F7D042A}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

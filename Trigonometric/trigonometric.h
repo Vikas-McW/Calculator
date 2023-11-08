@@ -1,7 +1,16 @@
 #include "calculator.h"
+
+#pragma once
+
+#ifdef MYDLL_EXPORTS
+#define MYDLL_API __declspec(dllexport)
+#else
+#define MYDLL_API __declspec(dllimport)
+#endif
+
 namespace trigonometric_scope {
-	double trigonometric(int operation);
-	template<typename R, typename T> R sin_(T n);
-	template<typename R, typename T> R cos_(T n);
-	template<typename R, typename T> R tan_(T n);
+	MYDLL_API double trigonometric(int operation);
+	template<typename R, typename T> MYDLL_API R sin_(T n);
+	template<typename R, typename T> MYDLL_API R cos_(T n);
+	template<typename R, typename T> MYDLL_API R tan_(T n);
 }
