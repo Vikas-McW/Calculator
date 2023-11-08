@@ -45,6 +45,8 @@ namespace arithmetic_scope {
 	}
 
 	template <typename R, typename T1, typename T2> R add(T1 a, T2 b) { return (a + b); }
+//	template <typename R, typename T1, typename T2> R add(T1 a, T2 b) { return (0); }					// testing line : Static Linking Testing
+
 	template <typename R, typename T1, typename T2> R sub(T1 a, T2 b) { return (a - b); }
 	template <typename R, typename T1, typename T2> R mul(T1 a, T2 b) { return (a * b); }
 	template <typename R, typename T1, typename T2> R div(T1 a, T2 b) { return (a / b); }
