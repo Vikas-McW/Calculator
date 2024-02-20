@@ -1,6 +1,6 @@
 #include "calculator.h"
 #include "arithmetic.h"
-#include "linear.h""
+#include "linear.h"
 #include "trigonometric.h"
 
 using namespace std;
